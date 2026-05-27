@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dubey Yash | Portfolio</title>
+    <meta
+      name="description"
+      content="Animated portfolio of Dubey Yash. Projects, skills, education and downloadable resume."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="bg" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <div class="topbar__inner container">
+        <a class="brand" href="#home" aria-label="Go to top">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__name">Dubey Yash</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="topbar__cta">
+          <button class="btn btn--primary" id="resumeBtn" type="button">
+            Download Resume
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero__grid">
+          <div class="hero__content reveal">
+            <div class="kicker">Front-End + AI Projects</div>
+            <h1 class="title">
+              I build <span class="accent">clean</span> interfaces
+              <span class="title__sub">for real-world use.</span>
+            </h1>
+
+            <p class="lead">
+              I am a fresher Computer Engineering graduate focused on
+            front-end development UI/UX Designer and AI/Deep Learning systems.
+            </p>
+
+            <div class="typing" aria-label="Role highlights">
+              <span class="typing__label">Focus:</span>
+              <span class="typing__text" id="typingText"></span>
+              <span class="typing__cursor" aria-hidden="true">|</span>
+            </div>
+
+            <div class="hero__actions">
+              <a class="btn btn--ghost" href="#projects">View Projects</a>
+              <a class="btn btn--ghost" href="#contact">Contact Me</a>
+            </div>
+
+            <div class="hero__badges">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Responsive</span>
+              <span class="pill">Git/GitHub</span>
+            </div>
+          </div>
+
+          <div class="hero__side reveal">
+            <div class="profileCard">
+              <div class="profileCard__ring" aria-hidden="true"></div>
+              <div class="profileCard__imgWrap">
+                <img
+                  class="profileCard__img"
+                  src="./assets/profile.jpg"
+                  alt="Portrait of Dubey Yash"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <div class="profileCard__fallback" aria-hidden="true" style="display:none;">
+                  <span>YASH</span>
+                </div>
+              </div>
+
+              <div class="profileCard__meta">
+                <div class="metaRow">
+                  <span class="metaRow__label">Name</span>
+                  <span class="metaRow__value">Dubey Yash</span>
+                </div>
+                <div class="metaRow">
+                  <span class="metaRow__label">Email</span>
+                  <a
+                    class="metaRow__value link"
+                    href="mailto:yashdubey680@gmail.com"
+                    >yashdubey680@gmail.com</a
+                  >
+                </div>
+                <div class="metaRow">
+                  <span class="metaRow__label">Phone</span>
+                  <a class="metaRow__value link" href="tel:+919930621993"
+                    >+91 99306 21993</a
+                  >
+                </div>
+              </div>
+
+              <div class="profileCard__hint">
+              
+              </div>
+            </div>
+
+            <div class="sideStats">
+              <div class="stat">
+                <div class="stat__num">3</div>
+                <div class="stat__label">Featured Projects</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">BE</div>
+                <div class="stat__label">Computer Engineering</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">AI</div>
+                <div class="stat__label">Parking Occupancy System</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="about">
+        <div class="section__head reveal">
+          <h2>About</h2>
+          <p>
+            Career objective: pursue a professional role to enhance knowledge and experience,
+            with strong interest in banking through dedicated efforts and a positive approach.
+          </p>
+        </div>
+
+        <div class="grid3">
+          <article class="card reveal">
+            <h3>What I’m building</h3>
+            <p>
+              I enjoy turning ideas into responsive, user-focused interfaces,
+              and pairing them with intelligent back-end logic and AI workflows.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Work style</h3>
+            <p>
+              Clean code, quick iterations, and UI details. I like to ship projects
+              that feel smooth and practical.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Strength</h3>
+            <p>
+              End-to-end thinking: from UI to data handling and system design.
+              My AI underground parking assistant combines QR access and occupancy monitoring.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="skills">
+        <div class="section__head reveal">
+          <h2>Skills</h2>
+          <p>Core tools and technologies pulled from your CV.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skillGroup reveal">
+            <div class="skillGroup__title">Front-End</div>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Responsive Design</span>
+              <span class="chip">Website Development</span>
+              <span class="chip">UI Concepts</span>
+            </div>
+          </div>
+
+          <div class="skillGroup reveal">
+            <div class="skillGroup__title">Back-End / Tools</div>
+            <div class="chips">
+              <span class="chip">Node.js</span>
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Project Structure</span>
+            </div>
+          </div>
+
+          <div class="skillGroup reveal">
+            <div class="skillGroup__title">AI / Deep Learning</div>
+            <div class="chips">
+              <span class="chip">Deep Learning</span>
+              <span class="chip">AI Systems</span>
+              <span class="chip">QR-based Access</span>
+              <span class="chip">Real-time Status</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="projects">
+        <div class="section__head reveal">
+          <h2>Projects</h2>
+          <p>Selected projects based on your CV.</p>
+        </div>
+
+        <div class="projectGrid">
+          <article class="project reveal">
+            <div class="project__top">
+              <div class="project__badge">System</div>
+              <h3 class="project__title">HR Management System</h3>
+            </div>
+            <p class="project__desc">
+              Designed and developed a system to manage employee records, task assignments, and login features.
+              Focused on functionality, data handling, and user interface.
+            </p>
+            <div class="project__tags">
+              <span class="tag">Employee Records</span>
+              <span class="tag">Task Assignment</span>
+              <span class="tag">Login</span>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <div class="project__badge project__badge--alt">Web</div>
+              <h3 class="project__title">Portfolio Website</h3>
+            </div>
+            <p class="project__desc">
+              Created a personal portfolio website using HTML, CSS, JavaScript, Node.js, and Tailwind CSS.
+              Features include project showcase, skill listing, and contact form with responsive layout.
+            </p>
+            <div class="project__tags">
+              <span class="tag">Responsive UI</span>
+              <span class="tag">Projects</span>
+              <span class="tag">Contact Form</span>
+              <span class="tag">Tailwind</span>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <div class="project__badge project__badge--ai">AI</div>
+              <h3 class="project__title">AI Underground Parking Assistant</h3>
+            </div>
+            <p class="project__desc">
+              Engineered an end-to-end system using AI/Deep Learning to monitor parking slot occupancy.
+              Integrated a QR-based scanning system for real-time available/occupied status and optimized
+              underground traffic flow by directing users to specific slots.
+            </p>
+            <div class="project__tags">
+              <span class="tag">AI / Deep Learning</span>
+              <span class="tag">QR Scanning</span>
+              <span class="tag">Real-time Status</span>
+              <span class="tag">Traffic Optimization</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="education">
+        <div class="section__head reveal">
+          <h2>Education</h2>
+          <p>Academic background from your CV.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="tItem reveal">
+            <div class="tDot" aria-hidden="true"></div>
+            <div class="tCard">
+              <div class="tCard__title">Bachelors in Technology (BE Computer Engineering)</div>
+              <div class="tCard__meta">St. John College of Engineering and Technology</div>
+              <div class="tCard__desc">Focused on computer engineering fundamentals and development skills.</div>
+            </div>
+          </div>
+
+          <div class="tItem reveal">
+            <div class="tDot" aria-hidden="true"></div>
+            <div class="tCard">
+              <div class="tCard__title">Higher Secondary Certificate (2022)</div>
+              <div class="tCard__meta">Board of Higher Education, Mumbai. Thakur College</div>
+              <div class="tCard__desc">Completed higher secondary education.</div>
+            </div>
+          </div>
+
+          <div class="tItem reveal">
+            <div class="tDot" aria-hidden="true"></div>
+            <div class="tCard">
+              <div class="tCard__title">Secondary School Certificate (2020)</div>
+              <div class="tCard__meta">Board of Secondary Education, Mumbai. St. Lawrence High School</div>
+              <div class="tCard__desc">Completed secondary education.</div>
+            </div>
+          </div>
+
+          <div class="tItem reveal">
+            <div class="tDot" aria-hidden="true"></div>
+            <div class="tCard">
+              <div class="tCard__title">Additional</div>
+              <div class="tCard__meta">MHT-CET + Front-End Development</div>
+              <div class="tCard__desc">
+                Training and skills: HTML, CSS, JavaScript, Node.js, responsive design, Git & GitHub.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="contactGrid">
+          <div class="contactLeft reveal">
+            <div class="section__head" style="padding-left:0; margin-bottom: 10px;">
+              <h2>Contact</h2>
+              <p>Let’s connect and build something useful.</p>
+            </div>
+
+            <div class="contactList">
+              <div class="contactRow">
+                <div class="contactRow__icon" aria-hidden="true">✉</div>
+                <a class="contactRow__text link" href="mailto:yashdubey680@gmail.com">
+                  yashdubey680@gmail.com
+                </a>
+              </div>
+              <div class="contactRow">
+                <div class="contactRow__icon" aria-hidden="true">☎</div>
+                <a class="contactRow__text link" href="tel:+919930621993">
+                  +91 99306 21993
+                </a>
+              </div>
+              <div class="contactRow">
+                <div class="contactRow__icon" aria-hidden="true">⌂</div>
+                <div class="contactRow__text">
+                  Room No – 04, Kripa Shankar Singh Chawl No – 18, Gaondevi Road, Near Indra Chowk,
+                  Poisar, Kandivali East - Mumbai – 400101.
+                </div>
+              </div>
+            </div>
+
+            <div class="contactCtas">
+              <button class="btn btn--primary" id="resumeBtn2" type="button">
+                Download Resume
+              </button>
+              <a class="btn btn--ghost" href="#home">Back to top</a>
+            </div>
+          </div>
+
+          <div class="contactRight reveal">
+            <div class="contactCard">
+              <div class="contactCard__title">Quick Snapshot</div>
+              <div class="contactCard__rows">
+                <div class="miniRow">
+                  <div class="miniRow__k">Name</div>
+                  <div class="miniRow__v">Dubey Yash</div>
+                </div>
+                <div class="miniRow">
+                  <div class="miniRow__k">Work</div>
+                  <div class="miniRow__v">Fresher</div>
+                </div>
+                <div class="miniRow">
+                  <div class="miniRow__k">Strength</div>
+                  <div class="miniRow__v">AI + Real-time Systems</div>
+                </div>
+                <div class="miniRow">
+                  <div class="miniRow__k">Interests</div>
+                  <div class="miniRow__v">Front-End UI + AI</div>
+                </div>
+              </div>
+              <div class="contactCard__note">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Dubey Yash. Built with pure HTML/CSS/JS.</span>
+        <span class="footer__sub">Scroll animations + animated background included.</span>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
